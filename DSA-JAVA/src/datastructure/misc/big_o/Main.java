@@ -24,12 +24,20 @@ public class Main {
 
     }
 
+    // O(1)
+    public static int addItems(int n){
+        return n + n + n;
+    }
+
     public static void main(String[] args){
         /*
         * System.out.println("The Big O(n): ");
         * printItemsn(10);
+        *System.out.println("The Big O(n^2): ");
+        * printItemsn_n(10);
         */
-        System.out.println("The Big O(n^2): ");
-        printItemsn_n(10);
+
+        System.out.println("The Big O(1): ");
+        addItems(10);
     }
 }
