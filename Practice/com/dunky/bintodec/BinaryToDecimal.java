@@ -15,7 +15,7 @@ public class BinaryToDecimal {
     public static void main(String[] args){
 
         BinToDec binaryDecimal = new BinToDec();
-        System.out.println(binaryDecimal.convertToDec("100101"));
+        System.out.println(binaryDecimal.convertToDec("10110"));
 
     }
 }
