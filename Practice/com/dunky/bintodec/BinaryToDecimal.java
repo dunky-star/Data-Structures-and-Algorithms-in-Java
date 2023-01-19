@@ -1,5 +1,6 @@
 package com.dunky.bintodec;
 
+// Converting Binary number to Decimal.
 class BinToDec{
     public int convertToDec(String binary){
         int result = 0;
