@@ -10,7 +10,7 @@ public class CountChars {
     }
 
     public static void main(String[] args){
-        CountChars countChars = new CountChars();
-        System.out.println(countChars.countChars('a', "Sally sells sea shell on the seashore"));
+        CountChars countChar = new CountChars();
+        System.out.println(countChar.countChars('a', "Sally sells sea shell on the seashore"));
     }
 }
