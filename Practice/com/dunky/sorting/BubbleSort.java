@@ -1,10 +1,12 @@
 package com.dunky.sorting;
 
+import java.util.Arrays;
+
 public class BubbleSort {
     public void sort(int[] numbers){
-        for (int i = 1; i < numbers.length; i++){
+        for (int i = 1; i < numbers.length ; i++){
             for (int j = 1; j < numbers.length - i; j++){
-                if(numbers[j] <  numbers[j + 1]){
+                if(numbers[j] >  numbers[j + 1]){
                     int temp = numbers[j];
                     numbers[j] = numbers[j + 1];
                     numbers[j + 1] = temp;
@@ -13,20 +15,20 @@ public class BubbleSort {
         }
     }
 
-    public void sortImprovement1(int[] numbers){
-        for (int i = 1; i < numbers.length; i++){
-            for (int j = 1; j < numbers.length - i; j++){
-                if (numbers[j] > numbers[j + 1]){
-                    swap(numbers, j, j + 1);
+    public void sortImprovement(int[] numbersArray){
+        for (int i = 1; i < numbersArray.length; i++){
+            for (int j = 1; j < numbersArray.length - i; j++){
+                if (numbersArray[j] > numbersArray[j + 1]){
+                    swap(numbersArray, j, j + 1);
                 }
             }
         }
     }
 
-    public void swap (int[] numbers, int j, int k){
-        int temp = numbers[j];
-        numbers[j] = numbers[k];
-        numbers[k] = temp;
+    public void swap (int[] numbersArray, int j, int k){
+        int temp = numbersArray[j];
+        numbersArray[j] = numbersArray[k];
+        numbersArray[k] = temp;
     }
 
     public static void main(String[] args){
@@ -38,24 +40,20 @@ public class BubbleSort {
         for(int i=0; i < numbers.length; i++){
             System.out.print(numbers[i] + " ");
         }
-
+        System.out.println();
         bubbleSort.sort(numbers);
-        System.out.println("\nFirst number array after Bubble Sort");
-        for(int i=0; i < numbers.length; i++){
-            System.out.print(numbers[i] + " ");
-        }
+        System.out.println(Arrays.toString(numbers));
 
+        System.out.println();
 
-        System.out.println("\nSecond number array Before Bubble Sort");
+        System.out.println("Second number array Before Bubble Sort");
         for(int i=0; i < numbers2.length; i++){
             System.out.print(numbers2[i] + " ");
         }
 
-        bubbleSort.sortImprovement1(numbers2);
-        System.out.println("\nSecond number array after Bubble Sort");
-        for(int i=0; i < numbers2.length; i++){
-            System.out.print(numbers2[i] + " ");
-        }
+        System.out.println();
+        bubbleSort.sortImprovement(numbers2);
+        System.out.println(Arrays.toString(numbers2));
 
     }
 
