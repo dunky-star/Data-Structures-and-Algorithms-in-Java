@@ -36,20 +36,11 @@ public class BubbleSort {
         int[] numbers = new int[] {2, 7, 5, 2, 4, 6, 2, 8, 1, 0};
         int[] numbers2 = new int[] {100, 7, 1000, 2, 4, 6, 2, 8, 1, 4000, 0};
 
-        System.out.println("First number array Before Bubble Sort");
-        for(int i=0; i < numbers.length; i++){
-            System.out.print(numbers[i] + " ");
-        }
         System.out.println();
         bubbleSort.sort(numbers);
         System.out.println(Arrays.toString(numbers));
 
         System.out.println();
-
-        System.out.println("Second number array Before Bubble Sort");
-        for(int i=0; i < numbers2.length; i++){
-            System.out.print(numbers2[i] + " ");
-        }
 
         System.out.println();
         bubbleSort.sortImprovement(numbers2);
