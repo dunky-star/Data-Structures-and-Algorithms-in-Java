@@ -20,7 +20,7 @@ public class StackReverseAString {
         Stack<Character> stack = new Stack<>();
 
         // push every character of the given string into the stack
-        for (int i = 0; i < str.length(); i++) {
+        for (int i = 0; i < str.length(); ++i) {
             stack.push(str.charAt(i));
         }
 
