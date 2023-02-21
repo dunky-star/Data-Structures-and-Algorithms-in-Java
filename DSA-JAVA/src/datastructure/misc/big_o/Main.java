@@ -8,7 +8,7 @@ public class Main {
         }
 
     }
-    // Big O(n+n)
+    // Big O(n+n) = O(2n)
     public static void printItems_n(int n){
         for(int i=0; i < n; i++){
             System.out.println(i);
@@ -35,7 +35,7 @@ public class Main {
         return n + n + n;
     }
 
-    // Big O(a + b)
+    // Big O(a + b): Different terms for input.
     public static void printItem_a_b(int a, int b){
         for(int i=0; i < a; i++){
             System.out.println(i);
@@ -43,6 +43,15 @@ public class Main {
         for(int j=0; j < b; j++){
             System.out.println(j);
         }
+    }
+
+    // Big O(a * b): Different terms for input.
+    public static void printItem_axb(int a, int b){
+          for(int i=0; i < a; i++) {
+              for (int j = 0; j < b; j++) {
+                  System.out.println(i + " " + j);
+              }
+          }
     }
 
     public static void main(String[] args){
@@ -55,6 +64,6 @@ public class Main {
 
         // System.out.println("The Big O(1): " + addItems(10));
         System.out.println("The Big O(a + b): ");
-        printItem_a_b(5, 8);
+        printItem_axb(5, 8);
     }
 }
