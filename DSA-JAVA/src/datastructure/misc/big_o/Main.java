@@ -1,5 +1,8 @@
 package datastructure.misc.big_o;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
     // Big O(n)
     public static void printItem_n(int n){
@@ -63,7 +66,26 @@ public class Main {
 
 
         // System.out.println("The Big O(1): " + addItems(10));
-        System.out.println("The Big O(a + b): ");
+        System.out.println("The Big O(a * b): ");
         printItem_axb(5, 8);
+
+        // Big O(ArrayList): ArrayList - adding or removing an element is O(1)
+        // Removing index as well as adding by index is O(n) -> leads to reindexing.
+        List<Integer> myList = new ArrayList<>();
+        myList.add(11);
+        myList.add(3);
+        myList.add(33);
+        myList.add(7);
+        System.out.println("*****************************");
+        System.out.println(myList);
+        myList.remove(0);
+        System.out.println("List after removing an item at index 0");
+        System.out.println("*****************************");
+        System.out.println(myList);
+        myList.add(0, 200);
+        System.out.println("List after adding 200 at index 0");
+        System.out.println("*****************************");
+        System.out.println(myList);
+
     }
 }
