@@ -121,8 +121,10 @@ public class Main {
         linkedList.printList();
 
         linkedList.prepend(1);
+        linkedList.set(1, 15);
+        linkedList.insert(4, 20);
 
-        System.out.println("\n\nAfter prepend():");
+        System.out.println("\nAfter prepend() and set():");
         System.out.println("----------------");
         linkedList.getHead();
         linkedList.getTail();
@@ -133,6 +135,11 @@ public class Main {
 
         System.out.println("My linked list index with value of 2: "
                 + linkedList.get(2).value + "\n");
+
+        linkedList.reverse();
+
+        System.out.println("\nLL after reverse():");
+        linkedList.printList();
 
     }
 }
