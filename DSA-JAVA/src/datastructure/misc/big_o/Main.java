@@ -87,5 +87,9 @@ public class Main {
         System.out.println("*****************************");
         System.out.println(myList);
 
+        Cookie myCookie1 = new Cookie("Green");
+        Cookie myCookie2 = new Cookie("Red");
+        System.out.println("The color of Cookie 1 is: " + myCookie1.getColor());
+
     }
 }
