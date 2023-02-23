@@ -107,12 +107,14 @@ public class Main {
 
         // Linked List
         LinkedList linkedList = new LinkedList(4);
-        linkedList.append(5);
+        linkedList.append(3);
+        System.out.println("Before prepend():");
+        System.out.println("-----------------");
         linkedList.getHead();
         linkedList.getTail();
         linkedList.getLength();
-        System.out.println(linkedList.removeLast().value);
 
+        System.out.println("\nLinked List:");
         linkedList.printList();
 
     }
