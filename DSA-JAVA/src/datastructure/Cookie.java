@@ -1,4 +1,4 @@
-package datastructure.misc.big_o;
+package datastructure;
 
 public class Cookie {
     private String color;

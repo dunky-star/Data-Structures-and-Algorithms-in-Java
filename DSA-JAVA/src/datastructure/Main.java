@@ -1,6 +1,4 @@
-package datastructure.misc.big_o;
-
-import datastructure.misc.linkedlist.LinkedList;
+package datastructure;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -92,8 +90,8 @@ public class Main {
 
         Cookie myCookie1 = new Cookie("Green");
         Cookie myCookie2 = new Cookie("Red");
-        System.out.println("\nThe color of Cookie 1 is: " + myCookie1.getColor()
-        + " \nand the color of Cookie 2 is: " + myCookie2.getColor());
+        // System.out.println("\nThe color of Cookie 1 is: " + myCookie1.getColor()
+        // + " \nand the color of Cookie 2 is: " + myCookie2.getColor());
 
 
         // Pointers
@@ -109,9 +107,11 @@ public class Main {
 
         // Linked List
         LinkedList linkedList = new LinkedList(4);
+        linkedList.append(5);
         linkedList.getHead();
         linkedList.getTail();
         linkedList.getLength();
+        System.out.println(linkedList.removeLast().value);
 
         linkedList.printList();
 
