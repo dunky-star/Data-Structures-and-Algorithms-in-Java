@@ -98,12 +98,11 @@ public class Main {
         HashMap<String, Integer> map1 = new HashMap<>();
         HashMap<String, Integer> map2 = new HashMap<>();
 
-        map1.put("value1", 100);
+        map1.put("value 1 ", 100);
         map2 = map1;
+        map1.put("value 2 ", 1000);
         System.out.println(map1);
         System.out.println(map2);
-
-
 
     }
 }
