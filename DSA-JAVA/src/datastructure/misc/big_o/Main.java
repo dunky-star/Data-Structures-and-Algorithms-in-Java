@@ -1,6 +1,7 @@
 package datastructure.misc.big_o;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 public class Main {
@@ -91,6 +92,18 @@ public class Main {
         Cookie myCookie2 = new Cookie("Red");
         System.out.println("\nThe color of Cookie 1 is: " + myCookie1.getColor()
         + " \nand the color of Cookie 2 is: " + myCookie2.getColor());
+
+
+        // Pointers
+        HashMap<String, Integer> map1 = new HashMap<>();
+        HashMap<String, Integer> map2 = new HashMap<>();
+
+        map1.put("value1", 100);
+        map2 = map1;
+        System.out.println(map1);
+        System.out.println(map2);
+
+
 
     }
 }
