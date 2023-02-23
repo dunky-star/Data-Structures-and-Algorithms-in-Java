@@ -23,6 +23,7 @@ public class LinkedList {
         length = 1;
     }
 
+    // Print function for displaying linked list values.
     public void printList() {
         Node temp = head;
         while (temp != null) {
