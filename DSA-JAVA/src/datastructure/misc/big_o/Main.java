@@ -89,7 +89,8 @@ public class Main {
 
         Cookie myCookie1 = new Cookie("Green");
         Cookie myCookie2 = new Cookie("Red");
-        System.out.println("The color of Cookie 1 is: " + myCookie1.getColor());
+        System.out.println("\nThe color of Cookie 1 is: " + myCookie1.getColor()
+        + " \nand the color of Cookie 2 is: " + myCookie2.getColor());
 
     }
 }
