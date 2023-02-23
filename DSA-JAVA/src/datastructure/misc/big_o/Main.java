@@ -109,6 +109,11 @@ public class Main {
 
         // Linked List
         LinkedList linkedList = new LinkedList(4);
+        linkedList.getHead();
+        linkedList.getTail();
+        linkedList.getLength();
+
+        linkedList.printList();
 
     }
 }
