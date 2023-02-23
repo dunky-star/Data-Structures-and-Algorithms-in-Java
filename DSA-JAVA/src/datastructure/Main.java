@@ -108,6 +108,9 @@ public class Main {
         // Linked List
         LinkedList linkedList = new LinkedList(4);
         linkedList.append(3);
+        linkedList.append(2);
+        linkedList.append(3);
+        linkedList.append(4);
         System.out.println("Before prepend():");
         System.out.println("-----------------");
         linkedList.getHead();
@@ -116,6 +119,20 @@ public class Main {
 
         System.out.println("\nLinked List:");
         linkedList.printList();
+
+        linkedList.prepend(1);
+
+        System.out.println("\n\nAfter prepend():");
+        System.out.println("----------------");
+        linkedList.getHead();
+        linkedList.getTail();
+        linkedList.getLength();
+
+        System.out.println("\nLinked List:");
+        linkedList.printList();
+
+        System.out.println("My linked list index with value of 2: "
+                + linkedList.get(2).value + "\n");
 
     }
 }
