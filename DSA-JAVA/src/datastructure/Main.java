@@ -211,6 +211,11 @@ public class Main {
         System.out.println("**********************************");
 
         myHashTable.printTable();
+        System.out.println("Lumber:");
+        System.out.println( myHashTable.get("lumber") );
+
+        System.out.println("\nBolts:");
+        System.out.println( myHashTable.get("bolts") );
 
 
     }
