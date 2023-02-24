@@ -173,12 +173,30 @@ public class Main {
         myQueues.enqueue("Arma Lamaro");
         myQueues.enqueue("Sheena");
         myQueues.enqueue("Rachel");
-        System.out.println("Stack Data Structure");
+        System.out.println("Queues Data Structure");
         System.out.println("*********************");
         myQueues.getFirst();
         myQueues.getLast();
         myQueues.printQueue();
         // System.out.println(myQueues.dequeue().value);
+
+
+        // Binary Search Tree
+        BinarySearchTrees myBST = new BinarySearchTrees();
+
+        myBST.insert(47);
+        myBST.insert(21);
+        myBST.insert(76);
+        myBST.insert(18);
+        myBST.insert(27);
+        myBST.insert(52);
+        myBST.insert(82);
+
+        System.out.println("\nBinary Search Tree Data Structure");
+        System.out.println("**********************************");
+        System.out.println(myBST.root.left.right.value);
+        System.out.println("BST Contains 27:");
+        System.out.println(myBST.contains(27));
 
 
     }
