@@ -141,5 +141,18 @@ public class Main {
         System.out.println("\nLL after reverse():");
         linkedList.printList();
 
+        // Doubly Linked List
+        DoublyLinkedList myDLL = new DoublyLinkedList(7);
+        myDLL.append(3);
+        myDLL.append(5);
+        myDLL.prepend(1);
+        System.out.println("----------------");
+        myDLL.getHead();
+        myDLL.getTail();
+        myDLL.getLength();
+
+        System.out.println("\nDoubly Linked List:");
+        myDLL.printList();
+
     }
 }
