@@ -178,6 +178,8 @@ public class Main {
         myQueues.getFirst();
         myQueues.getLast();
         myQueues.printQueue();
+        // System.out.println(myQueues.dequeue().value);
+
 
     }
 }
