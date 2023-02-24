@@ -77,7 +77,8 @@ public class Main {
         myList.add(3);
         myList.add(33);
         myList.add(7);
-        System.out.println("*****************************");
+        System.out.println("Singly Linked List Data Structure");
+        System.out.println("*********************************");
         System.out.println(myList);
         myList.remove(0);
         System.out.println("List after removing an item at index 0");
@@ -111,7 +112,7 @@ public class Main {
         linkedList.append(2);
         linkedList.append(3);
         linkedList.append(4);
-        System.out.println("Singly Linked List");
+
         System.out.println("Before prepend():");
         System.out.println("-----------------");
         linkedList.getHead();
@@ -149,7 +150,7 @@ public class Main {
         myDLL.insert(2,10);
         myDLL.prepend(1);
         System.out.println("Doubly Linked List");
-        System.out.println("------------------");
+        System.out.println("********************");
         myDLL.getHead();
         myDLL.getTail();
         myDLL.getLength();
@@ -160,7 +161,7 @@ public class Main {
         // Stack
         StacksQueues myStack = new StacksQueues(10);
         System.out.println("Stack Data Structure");
-        System.out.println("---------------------");
+        System.out.println("*********************");
         myStack.getTop();
         myStack.getHeight();
         myStack.printStack();
