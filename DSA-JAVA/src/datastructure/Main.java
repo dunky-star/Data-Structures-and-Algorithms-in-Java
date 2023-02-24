@@ -111,6 +111,7 @@ public class Main {
         linkedList.append(2);
         linkedList.append(3);
         linkedList.append(4);
+        System.out.println("Singly Linked List");
         System.out.println("Before prepend():");
         System.out.println("-----------------");
         linkedList.getHead();
@@ -147,13 +148,22 @@ public class Main {
         myDLL.append(5);
         myDLL.insert(2,10);
         myDLL.prepend(1);
-        System.out.println("----------------");
+        System.out.println("Doubly Linked List");
+        System.out.println("------------------");
         myDLL.getHead();
         myDLL.getTail();
         myDLL.getLength();
 
         System.out.println("\nDoubly Linked List:");
         myDLL.printList();
+
+        // Stack
+        StacksQueues myStack = new StacksQueues(10);
+        System.out.println("Stack Data Structure");
+        System.out.println("---------------------");
+        myStack.getTop();
+        myStack.getHeight();
+        myStack.printStack();
 
     }
 }
