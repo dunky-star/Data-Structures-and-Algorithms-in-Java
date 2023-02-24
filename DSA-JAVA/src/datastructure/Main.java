@@ -199,5 +199,19 @@ public class Main {
         System.out.println(myBST.contains(27));
 
 
+        // Hash table
+        HashTables myHashTable = new HashTables();
+
+        myHashTable.set("nails", 100);
+        myHashTable.set("tile", 50);
+        myHashTable.set("lumber", 80);
+        myHashTable.set("bolts", 200);
+        myHashTable.set("screws", 140);
+        System.out.println("\nHash Table Data Structure");
+        System.out.println("**********************************");
+
+        myHashTable.printTable();
+
+
     }
 }
