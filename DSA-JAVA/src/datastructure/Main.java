@@ -159,12 +159,25 @@ public class Main {
         myDLL.printList();
 
         // Stack
-        StacksQueues myStack = new StacksQueues(10);
+        Stacks myStack = new Stacks(10);
+        myStack.push(20);
+        myStack.push(50);
         System.out.println("Stack Data Structure");
         System.out.println("*********************");
         myStack.getTop();
         myStack.getHeight();
         myStack.printStack();
+
+        // Stack
+        Queues myQueues = new Queues("Duncan");
+        myQueues.enqueue("Arma Lamaro");
+        myQueues.enqueue("Sheena");
+        myQueues.enqueue("Rachel");
+        System.out.println("Stack Data Structure");
+        System.out.println("*********************");
+        myQueues.getFirst();
+        myQueues.getLast();
+        myQueues.printQueue();
 
     }
 }
