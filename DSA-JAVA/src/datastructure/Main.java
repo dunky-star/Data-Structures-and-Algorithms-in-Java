@@ -145,6 +145,7 @@ public class Main {
         DoublyLinkedList myDLL = new DoublyLinkedList(7);
         myDLL.append(3);
         myDLL.append(5);
+        myDLL.insert(2,10);
         myDLL.prepend(1);
         System.out.println("----------------");
         myDLL.getHead();
