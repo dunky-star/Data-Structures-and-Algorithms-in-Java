@@ -4,6 +4,7 @@ import java.util.Arrays;
 
 public class MergeSort {
 
+    // Helper method - merging
     public static int[] merge(int[] array1, int[] array2) {
         int[] combined = new int[array1.length + array2.length];
         int index = 0;
@@ -33,6 +34,7 @@ public class MergeSort {
         return combined;
     }
 
+    // Merge sorting
     public static int[] mergeSort(int[] array) {
         if (array.length == 1) return array;
 
