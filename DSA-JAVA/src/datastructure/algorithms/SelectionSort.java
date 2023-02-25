@@ -20,17 +20,15 @@ public class SelectionSort {
         }
     }
 
-
-
     public static void main(String[] args) {
 
-        int[] myArray = {4,2,6,5,1,3};
+        int[] myArray = {1000, 4,2,6,500,1,3, 20, -10};
 
         selectionSort(myArray);
 
         System.out.println( Arrays.toString(myArray) );
 
-        
+
     }
 
 }
