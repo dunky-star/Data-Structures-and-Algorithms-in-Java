@@ -11,6 +11,6 @@ public class FindingFactorial {
     }
 
     public static void main(String[] args){
-       System.out.println("The factorial is: " + factorial(10)) ;
+       System.out.println("The factorial is: " + factorial(5)) ;
     }
 }
