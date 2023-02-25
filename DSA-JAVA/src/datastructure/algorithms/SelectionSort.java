@@ -25,8 +25,9 @@ public class SelectionSort {
         int[] myArray = {1000, 4,2,6,500,1,3, 20, -10};
 
         selectionSort(myArray);
-
-        System.out.println( Arrays.toString(myArray) );
+        System.out.println("\nSelection Sort");
+        System.out.println("******************");
+        System.out.println("Soreted: " + Arrays.toString(myArray) );
 
 
     }
