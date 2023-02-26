@@ -57,7 +57,6 @@ public class BinarySearchTrees {
         return false;
     }
 
-
     // TREE TRAVERSAL
     // Breadth First Search (Tree Traversal)
     public ArrayList<Integer> BFS() {

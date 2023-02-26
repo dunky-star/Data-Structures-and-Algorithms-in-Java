@@ -191,12 +191,21 @@ public class Main {
         myBST.insert(27);
         myBST.insert(52);
         myBST.insert(82);
+        myBST.insert(47);
+        myBST.insert(100);
+        myBST.insert(200);
+        myBST.insert(40);
+        myBST.insert(1000);
+        myBST.insert(352);
+        myBST.insert(482);
 
         System.out.println("\nBinary Search Tree Data Structure");
         System.out.println("**********************************");
         System.out.println(myBST.root.left.right.value);
         System.out.println("BST Contains 27:");
         System.out.println(myBST.contains(27));
+        System.out.println("\nBreadth First Search:");
+        System.out.println( myBST.BFS() );
 
 
         // Hash table
