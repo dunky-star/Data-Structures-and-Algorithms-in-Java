@@ -34,7 +34,7 @@ public class QuickSort {
     public static void quickSort(int[] array) {
         quickSortHelper(array, 0, array.length-1);
     }
-    
+
 
     public static void main(String[] args) {
 
