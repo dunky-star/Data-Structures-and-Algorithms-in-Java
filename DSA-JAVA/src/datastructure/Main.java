@@ -107,41 +107,41 @@ public class Main {
 
 
         // Linked List
-        LinkList linkedList = new LinkList(4);
-        linkedList.append(3);
-        linkedList.append(2);
-        linkedList.append(3);
-        linkedList.append(4);
+        LinkedLists linkedLists = new LinkedLists(4);
+        linkedLists.append(3);
+        linkedLists.append(2);
+        linkedLists.append(3);
+        linkedLists.append(4);
 
         System.out.println("Before prepend():");
         System.out.println("-----------------");
-        linkedList.getHead();
-        linkedList.getTail();
-        linkedList.getLength();
+        linkedLists.getHead();
+        linkedLists.getTail();
+        linkedLists.getLength();
 
         System.out.println("\nLinked List:");
-        linkedList.printList();
+        linkedLists.printList();
 
-        linkedList.prepend(1);
-        linkedList.set(1, 15);
-        linkedList.insert(4, 20);
+        linkedLists.prepend(1);
+        linkedLists.set(1, 15);
+        linkedLists.insert(4, 20);
 
         System.out.println("\nAfter prepend() and set():");
         System.out.println("----------------");
-        linkedList.getHead();
-        linkedList.getTail();
-        linkedList.getLength();
+        linkedLists.getHead();
+        linkedLists.getTail();
+        linkedLists.getLength();
 
         System.out.println("\nLinked List:");
-        linkedList.printList();
+        linkedLists.printList();
 
         System.out.println("My linked list index with value of 2: "
-                + linkedList.get(2).value + "\n");
+                + linkedLists.get(2).value + "\n");
 
-        linkedList.reverse();
+        linkedLists.reverse();
 
         System.out.println("\nLL after reverse():");
-        linkedList.printList();
+        linkedLists.printList();
 
         // Doubly Linked List
         DoublyLinkedList myDLL = new DoublyLinkedList(7);
