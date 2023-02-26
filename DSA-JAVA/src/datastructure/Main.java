@@ -107,7 +107,7 @@ public class Main {
 
 
         // Linked List
-        LinkedList linkedList = new LinkedList(4);
+        LinkList linkedList = new LinkList(4);
         linkedList.append(3);
         linkedList.append(2);
         linkedList.append(3);
