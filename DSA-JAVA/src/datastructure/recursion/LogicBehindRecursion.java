@@ -1,0 +1,32 @@
+package datastructure.recursion;
+
+public class LogicBehindRecursion {
+
+    public static void main(String[] args){
+
+        // Calling the methods.
+        firstMethod();
+
+    }
+
+    public static void firstMethod(){
+        secondMethod();
+        System.out.println("I am the first method");
+    }
+    private static void secondMethod() {
+        thirdMethod();
+        System.out.println("I am the second method");
+    }
+
+    private static void thirdMethod() {
+        fourthMethod();
+        System.out.println("I am the third method");
+    }
+
+    private static void fourthMethod() {
+
+        System.out.println("I am the fourth method");
+    }
+
+
+}
