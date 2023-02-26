@@ -40,6 +40,7 @@ public class LogicBehindRecursion {
             System.out.println(n + " is less than 1");
         } else {
             recursiveMethod(n - 1);
+            System.out.println(n);
         }
     }
 
