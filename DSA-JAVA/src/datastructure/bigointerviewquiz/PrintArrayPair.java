@@ -12,6 +12,7 @@ public class PrintArrayPair {
         printArrPairs(sampleArray);
     }
 
+    // The time complexity for this method is Big O(n^2).
     public static void printArrPairs(int[] sampleArray){
         for (int i : sampleArray) {
             for (int j : sampleArray) {
