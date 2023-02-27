@@ -1,7 +1,7 @@
 package datastructure.bigointerviewquiz;
 
 /**
- * What is the time complexity for this given method?
+ * What is the time complexity for these given method?
  */
 public class TimeComplexityQuiz {
     public static void main(String[] args){
