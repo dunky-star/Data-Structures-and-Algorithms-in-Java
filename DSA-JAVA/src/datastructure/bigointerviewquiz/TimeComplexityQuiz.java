@@ -5,8 +5,10 @@ package datastructure.bigointerviewquiz;
  */
 public class TimeComplexityQuiz {
     public static void main(String[] args){
-        int[] sampleArray = {1, 2, 3, 4, 5};
-        printUnorderedPairs(sampleArray);
+        int[] sampleArrayA = {10, 20, 30, 40, 50};
+        int[] sampleArrayB = {1, 2, 3, 4, 5};
+        printUnorderedPairs(sampleArrayA);
+        printUnorderedPairsJ(sampleArrayA, sampleArrayB);
     }
 
     // The time complexity for this method is Big O(n^2).
@@ -17,4 +19,17 @@ public class TimeComplexityQuiz {
             }
         }
     }
+
+    // The time complexity for this method is Big O(a * b).
+    public static void printUnorderedPairsJ(int[] arrayA, int[] arrayB) {
+        for (int k : arrayA) {   // --------> O(a)
+            for (int i : arrayB) {  // --------> O(b)
+                if (k < i) {
+                    System.out.println(k + ", " + i);
+                }
+            }
+        }
+    }
+
+
 }
