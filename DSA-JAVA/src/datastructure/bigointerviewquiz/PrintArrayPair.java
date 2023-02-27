@@ -13,9 +13,9 @@ public class PrintArrayPair {
     }
 
     public static void printArrPairs(int[] sampleArray){
-        for (int i = 0; i < sampleArray.length; i++){
-            for (int j = 0; j < sampleArray.length; j++){
-                System.out.println(sampleArray[i] + ", " + sampleArray[j]);
+        for (int i : sampleArray) {
+            for (int j : sampleArray) {
+                System.out.println(i + ", " + j);
             }
         }
     }
