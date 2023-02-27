@@ -7,7 +7,7 @@ package datastructure.recursioninterview;
 public class DecimalToBinary {
 
     public static void main(String[] args){
-        System.out.println("GCD: " + decimalToBinary(8));
+        System.out.println("Decimal to Binary: " + decimalToBinary(10));
     }
 
     public static int decimalToBinary(int n){
