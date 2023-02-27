@@ -10,12 +10,12 @@ public class FibonacciNumbers {
     public int fibonacci(int n){
         if (n < 0) return -1;
         if (n == 0 || n == 1) return n;
-        return fibonacci(n - 1) + fibonacci(n -2);
+        return fibonacci(n - 1) + fibonacci(n - 2);
     }
 
     public static void main(String[] args){
         FibonacciNumbers fib = new FibonacciNumbers();
-        int result = fib.fibonacci(-3);
+        int result = fib.fibonacci(6);
         System.out.println("Result: " + result);
     }
 }
