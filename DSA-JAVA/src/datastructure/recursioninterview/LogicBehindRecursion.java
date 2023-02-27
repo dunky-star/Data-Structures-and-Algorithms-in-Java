@@ -1,4 +1,4 @@
-package datastructure.recursion;
+package datastructure.recursioninterview;
 
 public class LogicBehindRecursion {
 
