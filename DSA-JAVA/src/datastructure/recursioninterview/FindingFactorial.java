@@ -1,4 +1,4 @@
-package datastructure.interviewquiz;
+package datastructure.recursioninterview;
 
 /**
  * Finding factorial of a number.

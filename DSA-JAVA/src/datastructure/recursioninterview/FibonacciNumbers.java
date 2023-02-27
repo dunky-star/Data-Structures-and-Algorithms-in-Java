@@ -1,4 +1,4 @@
-package datastructure.interviewquiz;
+package datastructure.recursioninterview;
 
 /**
  * Write a program to return a number in the series 0,1,1,3,5,8,13,...,n.
