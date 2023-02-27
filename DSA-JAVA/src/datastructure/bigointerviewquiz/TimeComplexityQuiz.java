@@ -9,9 +9,10 @@ public class TimeComplexityQuiz {
         printUnorderedPairs(sampleArray);
     }
 
+    // The time complexity for this method is Big O(n^2).
     public static void printUnorderedPairs(int[] arr){
-        for (int i : arr) {
-            for (int j = i + 1; j < arr.length; j++) {
+        for (int i : arr) {   // --------> O(n-1)
+            for (int j = i + 1; j < arr.length; j++) {  // --------> O(n-2)
                 System.out.println(i + ", " + arr[j]);
             }
         }
