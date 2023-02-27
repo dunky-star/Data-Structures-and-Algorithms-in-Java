@@ -44,5 +44,7 @@ public class LogicBehindRecursion {
         }
     }
 
+    // Case 3: n to the power 2
+
 
 }
