@@ -1,5 +1,9 @@
 package datastructure.iterative;
 
+/**
+ * How to calculate power of a number suing iteration?
+ */
+
 public class PowerOfTwo {
 
     public static int PowerOfTwoIterative(int n){
@@ -13,6 +17,6 @@ public class PowerOfTwo {
     }
 
     public static void main(String[] args){
-        System.out.println("The power of 2: " + PowerOfTwoIterative(10));
+        System.out.println("The power : " + PowerOfTwoIterative(10));
     }
 }
