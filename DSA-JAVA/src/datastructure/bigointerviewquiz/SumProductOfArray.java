@@ -14,13 +14,14 @@ public class SumProductOfArray {
         sumAndProductArray(arrayNum);
     }
 
+    // Therefore, the time complexity for this method is Big O(n x m).
     public static void sumAndProductArray(int[] arr){
         int sum = 0;
         int product = 1;
-        for (int i : arr) {
+        for (int i : arr) {  // --------> O(n)
             sum += i;
         }
-        for (int j : arr) {
+        for (int j : arr) {  // --------> O(m)
             product *= j;
         }
         System.out.println("Sum of array is: " + sum + ", the product of array is: " + product);
