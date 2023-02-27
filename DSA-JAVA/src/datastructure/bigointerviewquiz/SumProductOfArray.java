@@ -17,11 +17,11 @@ public class SumProductOfArray {
     public static void sumAndProductArray(int[] arr){
         int sum = 0;
         int product = 1;
-        for(int i = 0; i < arr.length; i++){
-            sum += arr[i];
+        for (int i : arr) {
+            sum += i;
         }
-        for(int j = 0; j < arr.length; j++){
-            product *= arr[j];
+        for (int j : arr) {
+            product *= j;
         }
         System.out.println("Sum of array is: " + sum + ", the product of array is: " + product);
     }
