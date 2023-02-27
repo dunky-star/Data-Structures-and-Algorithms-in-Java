@@ -7,7 +7,7 @@ package datastructure.recursioninterview;
  */
 
 public class GreatestCommonDivisor {
-    
+
     public static void main(String[] args){
       System.out.println("GCD: " + gcd(8, 4));
     }
