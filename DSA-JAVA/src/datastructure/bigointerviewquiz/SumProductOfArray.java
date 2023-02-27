@@ -1,7 +1,7 @@
 package datastructure.bigointerviewquiz;
 
 /**
- * Create a function which calculates the sum and product of
+ * Create a function which calculates the sum and product of the
  * elements of an array.
  * Find the time complexity for created method.
  */
