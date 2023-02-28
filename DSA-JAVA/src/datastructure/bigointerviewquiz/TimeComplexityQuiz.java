@@ -30,10 +30,10 @@ public class TimeComplexityQuiz {
 
     // The time complexity for this method is also Big O(a * b).
     public static void printUnorderedPairsJj(int[] arrayA, int[] arrayB) {
-        for (int k : arrayA) {   // --------> O(a)
-            for (int i : arrayB) {  // --------> O(b)
-                for (k = 0; k < 1000000; k++) {  // // --------> O(1)
-                    System.out.println(k + ", " + i);
+        for (int i : arrayA) {   // --------> O(a)
+            for (int j : arrayB) {  // --------> O(b)
+                for (int k = 0; k < 1000000; k++) {  // // --------> O(1)
+                    System.out.println(i + ", " + j);
                 }
             }
         }
