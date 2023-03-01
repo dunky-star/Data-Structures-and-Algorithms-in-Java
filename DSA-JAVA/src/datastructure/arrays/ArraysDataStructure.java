@@ -88,6 +88,7 @@ public class ArraysDataStructure {
         arrDataStructure.insert(9, 1000);
 
         arrDataStructure.traverseArray();
+        arrDataStructure.searchInArray(700);
     }
 
 
