@@ -47,13 +47,15 @@ public class ArraysDataStructure {
     }
 
     //Search for an element in the given Array
-    public boolean searchInArray(int valueToSearch) {
+    public void searchInArray(int valueToSearch) {
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] == valueToSearch) {
-                return true;
+                System.out.println("Value is found at the index of " + i);
+                return;
             }
         }
-        return false;
+        
+        System.out.println(valueToSearch + " is not found");
     }
 
     // Delete value from Array
@@ -86,6 +88,7 @@ public class ArraysDataStructure {
         arrDataStructure.insert(9, 1000);
 
         arrDataStructure.traverseArray();
+        System.out.println("\n");
         arrDataStructure.searchInArray(700);
     }
 
