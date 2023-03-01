@@ -11,10 +11,6 @@ import java.util.Arrays;
  */
 
 public class ArraysDataStructure {
-    public static void main(String[] args){
-        int[] intArray = {10, 20, 30, 40, 50, 60, 100};
-        System.out.println(Arrays.toString(intArray));
-    }
 
     int[] arr = null;
 
@@ -72,6 +68,26 @@ public class ArraysDataStructure {
             System.out.println("The value that is provided is not in the range of array");
 
         }
+    }
+
+
+    public static void main(String[] args){
+        int[] intArray = {10, 20, 30, 40, 50, 60, 100};
+        System.out.println(Arrays.toString(intArray));
+
+        ArraysDataStructure arrDataStructure = new ArraysDataStructure(10);
+        arrDataStructure.insert(0, 100);
+        arrDataStructure.insert(1, 200);
+        arrDataStructure.insert(2, 300);
+        arrDataStructure.insert(3, 400);
+        arrDataStructure.insert(4, 500);
+        arrDataStructure.insert(5, 600);
+        arrDataStructure.insert(6, 700);
+        arrDataStructure.insert(7, 800);
+        arrDataStructure.insert(8, 900);
+        arrDataStructure.insert(9, 1000);
+
+        arrDataStructure.traverseArray();
     }
 
 
