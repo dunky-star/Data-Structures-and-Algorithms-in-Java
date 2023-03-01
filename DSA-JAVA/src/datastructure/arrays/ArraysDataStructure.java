@@ -25,7 +25,6 @@ public class ArraysDataStructure {
         try {
             if (arr[location] == Integer.MIN_VALUE) {
                 arr[location] = valueToBeInserted;
-                System.out.println("Successfully inserted");
             } else {
                 System.out.println("This cell is already occupied");
             }
@@ -48,14 +47,13 @@ public class ArraysDataStructure {
     }
 
     //Search for an element in the given Array
-    public void searchInArray(int valueToSearch) {
+    public boolean searchInArray(int valueToSearch) {
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] == valueToSearch) {
-                System.out.println("Value is found at the index of " + i);
-                return;
+                return true;
             }
         }
-        System.out.println(valueToSearch + " is not found");
+        return false;
     }
 
     // Delete value from Array
