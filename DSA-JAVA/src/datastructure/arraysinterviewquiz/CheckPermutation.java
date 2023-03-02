@@ -10,15 +10,17 @@ package datastructure.arraysinterviewquiz;
 public class CheckPermutation {
 
     public static void main(String[] args){
-        int[] array1 = {2, 1, 3, 5, 4, 6};
-        int[] array2 = {1, 3, 2, 4, 6, 5};
-        System.out.println("Permutation --> " + isPermutation(array1, array2));
+        int[] myArray1 = {2, 1, 3, 5, 4, 6, 7};
+        int[] myArray2 = {1, 3, 2, 4, 6, 5, 9};
+        boolean result = isPermutation(myArray1, myArray2);
+        System.out.println("Permutation --> " + result);
 
     }
 
     // Check is permutation?
+    // Permutation
     public static boolean isPermutation(int[] array1, int[] array2){
-        if (array1.length != array2.length){
+        if (array1.length != array2.length ) {
             return false;
         }
         int sum1 = 0;
@@ -26,16 +28,15 @@ public class CheckPermutation {
         int mult1 = 1;
         int mult2 = 1;
 
-        for(int i = 0; i < array1.length; i++){
-           sum1 += array1[i];
-           sum2 += array2[i];
-           mult1 *= array1[i];
-           mult2 *= array2[i];
-           if(sum1 == sum2 && mult1 == mult2){
-               return true;
-           }
+        for (int i = 0; i<array1.length; i++) {
+            sum1 += array1[i];
+            sum2 += array2[i];
+            mult1 *= array1[i];
+            mult2 *= array2[i];
         }
-
+        if (sum1 == sum2 && mult1 == mult2) {
+            return true;
+        }
         return false;
     }
 }
