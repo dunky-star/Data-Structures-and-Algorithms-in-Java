@@ -10,15 +10,15 @@ package datastructure.arraysinterviewquiz;
 public class CheckPermutation {
 
     public static void main(String[] args){
-        int[] myArray1 = {2, 1, 3, 5, 4, 6, 7};
-        int[] myArray2 = {1, 3, 2, 4, 6, 5, 9};
+        int[] myArray1 = {2, 1, 3, 5, 4, 6};
+        int[] myArray2 = {1, 3, 2, 4, 6, 5};
         boolean result = isPermutation(myArray1, myArray2);
         System.out.println("Permutation --> " + result);
 
     }
 
     // Check is permutation?
-    // Permutation
+
     public static boolean isPermutation(int[] array1, int[] array2){
         if (array1.length != array2.length ) {
             return false;
