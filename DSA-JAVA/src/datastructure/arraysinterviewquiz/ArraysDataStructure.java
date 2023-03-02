@@ -1,4 +1,4 @@
-package datastructure.arrays;
+package datastructure.arraysinterviewquiz;
 
 import java.util.Arrays;
 

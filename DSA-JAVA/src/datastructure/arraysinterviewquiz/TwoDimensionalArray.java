@@ -1,4 +1,4 @@
-package datastructure.arrays;
+package datastructure.arraysinterviewquiz;
 
 public class TwoDimensionalArray {
     int[][] arr = null;
