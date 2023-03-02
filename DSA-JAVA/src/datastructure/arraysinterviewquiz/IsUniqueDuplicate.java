@@ -11,7 +11,8 @@ package datastructure.arraysinterviewquiz;
 public class IsUniqueDuplicate {
     public static void main(String[] args){
         int[] intArray = {1, 2, 3, 4, 5, 10, 20, 0};
-        System.out.println("Array is Unique: " + isUnique(intArray));
+        boolean result = isUnique(intArray);
+        System.out.println("Array is Unique: " + result );
 
     }
 
