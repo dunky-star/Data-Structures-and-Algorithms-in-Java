@@ -1,7 +1,5 @@
 package datastructure.arraysinterviewquiz;
 
-import java.util.Arrays;
-
 /**
  * Write a program to find all pairs of integers whose sum is equal to a given number.
  * Examples
@@ -14,21 +12,21 @@ import java.util.Arrays;
 public class PairsTwoSum {
 
     public static void main(String[] args){
-        int[] intArray = {2,4,13,15, 5};
-        int[] result = twoSum(intArray, 20);
-        System.out.println(Arrays.toString(result));
+        int[] intArray = {2, 4, 3, 5, 6, -2, 4, 7, 8, 9};
+        System.out.println("Pairs: " + twoSum(intArray, 7));
     }
 
     // Two Sum
-    public static int[] twoSum(int[] nums, int target) {
-        for (int i=0; i<nums.length; i++) {
-            for (int j = i+1; j<nums.length; j++) {
-                if (nums[i]+nums[j]==target) {
-                    return new int[] { i, j};
+    public static String twoSum(int[] myArray, int sum) {
+        String result = "";
+        for(int i=0; i<myArray.length; i++) {
+            for(int j=i+1; j<myArray.length; j++) {
+                if (myArray[i]+myArray[j]==sum) {
+                    result += myArray[i]+","+myArray[j]+" | ";
                 }
             }
         }
-        throw new IllegalArgumentException("No solution found");
+        return result;
     }
 
 
