@@ -5,7 +5,7 @@ package datastructure.arraysinterviewquiz;
  * Write a program to check if an array contains a number in Java.
  */
 
-public class FindingNumberArray {
+public class ArraySearch {
 
     public static void main(String[] args){
 

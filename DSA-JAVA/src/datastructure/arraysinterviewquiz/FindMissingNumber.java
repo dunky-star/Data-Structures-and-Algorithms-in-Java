@@ -32,7 +32,7 @@ public class FindMissingNumber {
             actualSum += arr[i];
 
         }
-  
+
         return expectedSum - actualSum;
     }
 
