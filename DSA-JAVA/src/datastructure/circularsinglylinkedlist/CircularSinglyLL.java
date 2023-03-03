@@ -1,4 +1,4 @@
-package datastructure.circularlinkedlist;
+package datastructure.circularsinglylinkedlist;
 
 public class CircularSinglyLL {
   public Node head;

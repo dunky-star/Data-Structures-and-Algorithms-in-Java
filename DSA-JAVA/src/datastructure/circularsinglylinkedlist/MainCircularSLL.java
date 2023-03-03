@@ -1,4 +1,4 @@
-package datastructure.circularlinkedlist;
+package datastructure.circularsinglylinkedlist;
 
 class Main {
   public static void main(String[] args) {
