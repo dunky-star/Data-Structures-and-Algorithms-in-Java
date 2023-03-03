@@ -2,9 +2,11 @@ package datastructure.arraysinterviewquiz;
 
 /**
  * NB: It's one of the most commonly asked quiz in coding interviews.
+ * Write a function to find the missing number in a given integer array of 1 to 100.
+ * Example
  *
- * Find the missing number in an integer array of 1 to 100.
- * int intArray[] = {1, 2, 3, 4, 5, 6, 8, ... 9, ...100};
+ * intArray = {1,2,3,4,6}
+ * missingNumber(myArray, 6) // 5
  */
 
 public class FindMissingNumber {
@@ -16,19 +18,22 @@ public class FindMissingNumber {
                 65, 66, 67, 68, 69, 70, 71, 72, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85,
                 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100};
 
-        System.out.println("Missing Number is: " + missingNumber(intArray));
+        System.out.println("Missing Number is: " + missingNumber(intArray, 100));
 
     }
 
-    public static int missingNumber(int[] intArray) {
-        int sum1 = 0;
-        int sum2 = 0;
-        for (int i: intArray) {
-            sum1 += i;
+    static int missingNumber(int[] arr, int totalCount) {
+        int expectedSum = 0;
+        int actualSum = 0;
+        for (int i = 1; i <= totalCount; ++i) {
+            expectedSum += i;
         }
-        sum2 = 100*(100+1)/2;
-        return sum2 - sum1;
-    }
+        for (int i = 0; i < arr.length; i++) {
+            actualSum += arr[i];
 
+        }
+  
+        return expectedSum - actualSum;
+    }
 
 }
