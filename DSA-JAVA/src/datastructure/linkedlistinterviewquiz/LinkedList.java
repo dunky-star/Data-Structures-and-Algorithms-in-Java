@@ -31,7 +31,7 @@ public class LinkedList {
         for (int i = 0; i < size; i++){
             System.out.println(tempNode.value);
             if(i != size - 1 ){
-                System.out.println(" -> ");
+                System.out.print(" -> ");
             }
             tempNode = tempNode.next;
         }
