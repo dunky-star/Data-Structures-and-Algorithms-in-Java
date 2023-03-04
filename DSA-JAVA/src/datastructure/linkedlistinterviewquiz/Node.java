@@ -1,7 +1,7 @@
 package datastructure.linkedlistinterviewquiz;
 
 public class Node {
-    public int value;
-    public Node next;
-    public Node prev;
+    protected int value;
+    protected Node next;
+    protected Node prev;
 }
