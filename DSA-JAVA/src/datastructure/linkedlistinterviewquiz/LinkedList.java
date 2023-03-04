@@ -17,6 +17,11 @@ public class LinkedList {
 
     // Insert node into LinkedList
     protected void insertNode(int nodeValue){
+        if (head == null) {
+            createLinkedList(nodeValue);
+            return;
+        }
+
         Node newNode = new Node();
         newNode.value = nodeValue;
         newNode.next = null;
@@ -26,11 +31,11 @@ public class LinkedList {
     }
 
     // Traversal and output of Linked List nodes.
-    protected void traversalLinkedList(){
+    protected void traversalLinkedList() {
         Node tempNode = head;
-        for (int i = 0; i < size; i++){
-            System.out.println(tempNode.value);
-            if(i != size - 1 ){
+        for (int i =0; i<size; i++) {
+            System.out.print(tempNode.value);
+            if (i != size -1) {
                 System.out.print(" -> ");
             }
             tempNode = tempNode.next;
@@ -39,5 +44,5 @@ public class LinkedList {
     }
 
 
-    
+
 }
