@@ -33,6 +33,7 @@ public class Main {
         llA.insertNode(7);
         llA.insertNode(1);
         llA.insertNode(6);
+        llA.insertNode(10);
         LinkedList llB = new LinkedList();
         llA.insertNode(5);
         llA.insertNode(9);
@@ -41,6 +42,15 @@ public class Main {
         LinkedList resultSum = sumLL.sumLists(llA, llB);
         System.out.println("The sum of two Linked List in reverse:");
         resultSum.traversalLinkedList();
+
+        // Implementing Linked List Intersection between two lists.
+        IntersectionLL interLL = new IntersectionLL();
+        interLL.addSameNode(llA, llB, 7);
+        interLL.addSameNode(llA, llB, 2);
+        interLL.addSameNode(llA, llB, 1);
+
+        Node inter = interLL.findIntersection(llA, llB);
+        System.out.print("The intersecting node: " + inter.value);
 
 
     }
