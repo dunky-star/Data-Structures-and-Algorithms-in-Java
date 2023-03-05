@@ -59,6 +59,6 @@ public class StackUsingArray {
         newStackArray.push(5);
         newStackArray.push(40);
         int result = newStackArray.pop();
-        System.out.println("Stack is Full: " + result);
+        System.out.println("Pop out: " + result);
     }
 }
