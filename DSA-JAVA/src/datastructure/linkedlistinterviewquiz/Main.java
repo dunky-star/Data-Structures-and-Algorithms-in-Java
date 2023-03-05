@@ -27,5 +27,21 @@ public class Main {
         LinkedList t = parts.partition(ll,10);
         ll.traversalLinkedList();
 
+
+        // Implement Sum of LinkedList elements.
+        LinkedList llA = new LinkedList();
+        llA.insertNode(7);
+        llA.insertNode(1);
+        llA.insertNode(6);
+        LinkedList llB = new LinkedList();
+        llA.insertNode(5);
+        llA.insertNode(9);
+        llA.insertNode(2);
+        SumTwoLists sumLL = new SumTwoLists();
+        LinkedList resultSum = sumLL.sumLists(llA, llB);
+        System.out.println("The sum of two Linked List in reverse:");
+        resultSum.traversalLinkedList();
+
+
     }
 }
