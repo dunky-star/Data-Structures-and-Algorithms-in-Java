@@ -51,6 +51,8 @@ public class Main {
 
         Node inter = interLL.findIntersection(llA, llB);
         System.out.print("The intersecting node: " + inter.value);
+        System.out.println("The two linked lists are:");
+        ll.traversalLinkedList();
 
 
     }
