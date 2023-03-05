@@ -1,4 +1,4 @@
-package datastructure.stacklinkedlist;
+package datastructure.stackusinglinkedlist;
 
 public class SinglyLinkedList {
     public Node head;
