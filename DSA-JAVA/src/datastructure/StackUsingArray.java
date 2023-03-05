@@ -51,6 +51,22 @@ public class StackUsingArray {
         }
     }
 
+    // Pop
+    protected int peek(){
+        if(isEmpty()){
+            System.out.println("Stack is empty");
+            return -1;
+        }else{
+            return arr[topOfStack];
+        }
+    }
+
+    // Delete
+    protected void delete(){
+        arr = null;
+        System.out.println("The Stack is successfully deleted.");
+    }
+
     // Main method - program entry point.
     public static void main(String[] args){
         StackUsingArray newStackArray = new StackUsingArray(5);
@@ -58,7 +74,7 @@ public class StackUsingArray {
         newStackArray.push(25);
         newStackArray.push(5);
         newStackArray.push(40);
-        int result = newStackArray.pop();
-        System.out.println("Pop out: " + result);
+        int result = newStackArray.peek();
+        System.out.println("Peek out: " + result);
     }
 }
