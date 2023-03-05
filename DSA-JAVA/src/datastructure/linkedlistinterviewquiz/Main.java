@@ -35,9 +35,9 @@ public class Main {
         llA.insertNode(6);
         llA.insertNode(10);
         LinkedList llB = new LinkedList();
-        llA.insertNode(5);
-        llA.insertNode(9);
-        llA.insertNode(2);
+        llB.insertNode(5);
+        llB.insertNode(9);
+        llB.insertNode(2);
         SumTwoLists sumLL = new SumTwoLists();
         LinkedList resultSum = sumLL.sumLists(llA, llB);
         System.out.println("The sum of two Linked List in reverse:");
