@@ -78,7 +78,7 @@ public class QueuesUsingArray {
     // peek
     public int peek() {
         if (isEmpty()) {
-            System.out.println("The Circular Queue is emtpy.");
+            System.out.println("The Circular Queue is empty.");
             return -1;
         } else {
             return arr[beginningOfQueue];
