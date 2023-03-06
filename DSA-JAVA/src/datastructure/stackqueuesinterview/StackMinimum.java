@@ -8,6 +8,7 @@ package datastructure.stackqueuesinterview;
 
 public class StackMinimum {
 
+    // Linked List node.
     protected static class Node {
         int value;
         Node next;
@@ -17,4 +18,6 @@ public class StackMinimum {
             this.next = next;
         }
     }
+
+
 }
