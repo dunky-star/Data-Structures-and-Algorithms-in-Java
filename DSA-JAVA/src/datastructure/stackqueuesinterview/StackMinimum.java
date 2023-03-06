@@ -50,7 +50,13 @@ public class StackMinimum {
     }
 
     public static void main(String[] args){
-        
+        StackMinimum stackMin = new StackMinimum();
+        stackMin.push(3);
+        stackMin.push(5);
+        stackMin.push(6);
+        stackMin.push(8);
+        stackMin.push(2);
+        System.out.println(stackMin.min());
     }
 
 
