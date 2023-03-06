@@ -4,87 +4,103 @@ public class QueuesUsingArray {
     int[] arr;
     int topOfQueue;
     int beginningOfQueue;
+    int size;
 
-    public QueuesUsingArray(int size){
+    protected QueuesUsingArray(int size){
         this.arr = new int[size];
         this.beginningOfQueue = -1;
         this.topOfQueue = -1;
-        System.out.println("The queue is successfully created with size of: " + size);
+        this.size = size;
+        System.out.println("The Circular queue is successfully created with size of: " + size);
+    }
+
+
+    // isEmpty
+    protected boolean isEmpty() {
+        if (topOfQueue == -1) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
     // IsFull
-    public boolean isFull() {
-        if (topOfQueue == arr.length-1) {
+    protected boolean isFull() {
+        if (topOfQueue+1 == beginningOfQueue) {
+            return true;
+        } else if(beginningOfQueue == 0 && topOfQueue+1 == size){
             return true;
         } else {
             return false;
         }
     }
 
-    // isEmpty
-    public boolean isEmpty() {
-        if ((beginningOfQueue == -1) || (beginningOfQueue == arr.length)) {
-            return true;
-        } else {
-            return false;
-        }
-    }
-    // Enqueue
-    public void enQueue(int value) {
+    // enQueue
+    protected void enQueue(int value) {
         if (isFull()) {
-            System.out.println("The Queue is Full!");
+            System.out.println("The Circular Queue is full!");
         } else if (isEmpty()) {
             beginningOfQueue = 0;
             topOfQueue++;
             arr[topOfQueue] = value;
-            System.out.println("Succesffully inserted "+value+ " in the queue");
+            System.out.println("Successfully inserted "+value+" in the queue");
         } else {
-            topOfQueue++;
+            if (topOfQueue+1 == size) {
+                topOfQueue = 0;
+            } else {
+                topOfQueue++;
+            }
             arr[topOfQueue] = value;
-            System.out.println("Succesffully inserted "+value+ " in the queue");
+            System.out.println("Successfully inserted "+value+" in the queue");
         }
     }
 
-    // deQeueue
+    // deQueue
     public int deQueue() {
         if (isEmpty()) {
-            System.out.println("The Queue is empty!");
+            System.out.println("The Circular Queue is empty!");
             return -1;
         } else {
             int result = arr[beginningOfQueue];
-            beginningOfQueue++;
-            if (beginningOfQueue > topOfQueue) {
+            arr[beginningOfQueue] = 0;
+            if (beginningOfQueue == topOfQueue) {
                 beginningOfQueue = topOfQueue = -1;
+            } else if (beginningOfQueue+1 == size) {
+                beginningOfQueue = 0;
+            } else {
+                beginningOfQueue++;
             }
             return result;
         }
     }
 
-    // Peek
+
+    // peek
     public int peek() {
-        if (!isEmpty()) {
-            return arr[beginningOfQueue];
-        } else {
-            System.out.println("The Queue is empty!");
+        if (isEmpty()) {
+            System.out.println("The Circular Queue is emtpy.");
             return -1;
+        } else {
+            return arr[beginningOfQueue];
         }
     }
 
-    //delete
-
+    // deleteQueue
     public void deleteQueue() {
         arr = null;
-        System.out.println("The Queue is successfully deleted!");
+        System.out.println("The Circular Queue is successfully deleted!");
     }
 
 
+
     public static void main(String[] args){
-        QueuesUsingArray newQueue = new QueuesUsingArray(5);
-        newQueue.enQueue(200);
-        newQueue.enQueue(300);
-        newQueue.enQueue(400);
-        newQueue.enQueue(600);
-        newQueue.enQueue(1000);
+        QueuesUsingArray newCircularQueue = new QueuesUsingArray(5);
+        newCircularQueue.enQueue(200);
+        newCircularQueue.enQueue(300);
+        newCircularQueue.enQueue(400);
+        newCircularQueue.enQueue(600);
+        newCircularQueue.enQueue(1000);
+        newCircularQueue.enQueue(6000);
 
     }
 }
