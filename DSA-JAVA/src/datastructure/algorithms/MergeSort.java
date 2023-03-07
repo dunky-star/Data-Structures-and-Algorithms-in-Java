@@ -2,6 +2,15 @@ package datastructure.algorithms;
 
 import java.util.Arrays;
 
+/**
+ * When to use Merge Sort?
+ *  - Whe you need stable sort
+ *  - When average expected time is O(NlogN).
+ *
+ *  When to avoid Merge Sort?
+ *  - When space is a concern.
+ */
+
 public class MergeSort {
 
     // Helper method - merging
