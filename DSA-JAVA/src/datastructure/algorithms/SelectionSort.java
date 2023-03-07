@@ -2,6 +2,15 @@ package datastructure.algorithms;
 
 import java.util.Arrays;
 
+/**
+ * When to use Selection Sort?
+ * - When we have insufficient memory
+ * - Easy to implement
+ *
+ * When to avoid?
+ * - When time is a concern.
+ */
+
 public class SelectionSort {
 
     public static void selectionSort(int[] array) {
