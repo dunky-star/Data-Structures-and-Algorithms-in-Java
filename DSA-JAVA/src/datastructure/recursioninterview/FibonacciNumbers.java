@@ -1,5 +1,6 @@
 package datastructure.recursioninterview;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 
 /**
@@ -13,6 +14,7 @@ import java.util.HashMap;
 // This problem is Fibonacci series using memoization.
 public class FibonacciNumbers {
 
+    // Fibonacci with Memoization
     public static int fibMemo(int n, HashMap<Integer, Integer> memo){
         if(n == 1) return 0;
 
@@ -25,9 +27,24 @@ public class FibonacciNumbers {
 
     }
 
+    // Fibonacci with tabulation approach.
+    public static int fibTab(int n){
+        ArrayList<Integer> tb = new ArrayList<Integer>();
+        tb.add(0);
+        tb.add(1);
+        for (int i = 2; i <= n - 1; i++){
+            int n1 = tb.get(i-1);
+            int n2 = tb.get(i-2);
+            tb.add(n1+n2);
+        }
+        return tb.get(n-1);
+    }
+
+    // Main method
     public static void main(String[] args){
 
         HashMap<Integer, Integer> memo = new HashMap<Integer, Integer>();
-        System.out.println("Result: " + fibMemo(6, memo));
+        System.out.println("Result using memoization: " + fibMemo(6, memo));
+        System.out.println("Result using tabulation approach: " + fibTab(6));
     }
 }
