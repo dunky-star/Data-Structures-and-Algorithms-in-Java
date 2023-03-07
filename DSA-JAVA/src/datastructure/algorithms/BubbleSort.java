@@ -1,4 +1,13 @@
 package datastructure.algorithms;
+/**
+ * When to use Bubble Sort?
+ * - When the input is almost sorted
+ * - space is a concern
+ * - Easy to implement
+ *
+ * When to avoid Bubble Sort?
+ * - Average time complexity is very poor.
+ */
 
 import java.util.Arrays;
 
