@@ -1,4 +1,4 @@
-package datastructure.algorithms;
+package datastructure.algorithms.sorting;
 /**
  * When to use Bubble Sort?
  * - When the input is almost sorted
