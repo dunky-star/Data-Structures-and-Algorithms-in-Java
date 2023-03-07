@@ -24,7 +24,7 @@ public class InsertionSort {
 
     public static void main(String[] args) {
 
-        int[] myArray = {4000,2,6,5,-100,0,32,500, 1057};
+        int[] myArray = {4000,2,6,5,-100,0,32,500, 1057, 50};
 
         insertionSort(myArray);
 
