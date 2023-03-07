@@ -5,7 +5,7 @@ package datastructure.algorithms.dynamicprogramming;
  * Adjacent houses cannot be stolen
  *
  * Find the maximum amount that can be stolen using Dynamic Programing Top-Down Approach
- * and Bottom-Up approach
+ * and Bottom-Up approach.
  */
 
 public class HouseRobber {
