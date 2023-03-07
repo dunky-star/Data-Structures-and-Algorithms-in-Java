@@ -1,5 +1,7 @@
 package datastructure.algorithms.searching;
 
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args){
 
@@ -11,5 +13,8 @@ public class Main {
         }else{
             System.out.println("The element not found.");
         }
+
+        Arrays.sort(arr);
+        Searching.binarySearch(arr, 5);
     }
 }
