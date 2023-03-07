@@ -2,7 +2,7 @@ package datastructure.algorithms.dividenconquer;
 
 /**
  * Problem statement:
- * Given N, find the number of ways to express N as a sum of 1, 3 and 4.
+ * Given N, find the number of ways to express N as a sum of 1, 3 and 4
  */
 
 public class NumberFactor {
