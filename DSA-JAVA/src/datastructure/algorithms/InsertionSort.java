@@ -26,6 +26,7 @@ public class InsertionSort {
 
         int[] myArray = {4000,2,6,5,-100,0,32,500, 1057, 50};
 
+
         insertionSort(myArray);
 
         System.out.println( Arrays.toString(myArray) );
