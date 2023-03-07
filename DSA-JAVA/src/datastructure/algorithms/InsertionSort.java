@@ -2,6 +2,12 @@ package datastructure.algorithms;
 
 import java.util.Arrays;
 
+/**
+ * When to use Insertion Sort?
+ * - When we have insufficient memory.
+ * - When you have continuous inflow of numbers, and we want them sorted.
+ */
+
 public class InsertionSort {
 
     public static void insertionSort(int[] array) {
