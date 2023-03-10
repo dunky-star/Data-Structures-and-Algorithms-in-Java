@@ -58,5 +58,19 @@ public class AnimalQueue {
         }
     }
 
-    
+    // Peek
+    public Animal peek(){
+        if(dogs.size()==0){
+            return dequeueCats();
+        }else if(cats.size()==0){
+            return dequeueDogs();
+        }
+        Dog dog = dogs.peek();
+        Cat cat = cats.peek();
+        if(dog.isOlderThan(cat)){
+            return dogs.peek();
+        }else {
+            return cats.peek();
+        }
+    }
 }
