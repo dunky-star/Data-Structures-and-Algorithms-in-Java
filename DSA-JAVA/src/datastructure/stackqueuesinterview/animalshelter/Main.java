@@ -10,7 +10,7 @@ package datastructure.stackqueuesinterview.animalshelter;
  * operations such as enqueue, dequeueAny, dequeueDog, and dequeueCat.
  */
 
-public class AnimalShelter {
+public class Main {
     public static void main(String[] args){
         AnimalQueue animals = new AnimalQueue();
         animals.enqueue(new Cat("Kiki"));
@@ -21,6 +21,7 @@ public class AnimalShelter {
         animals.enqueue(new Dog("Dexter"));
 
         System.out.println(animals.dequeueAny().name());
+        System.out.println(animals.dequeueDogs().name());
     }
 
 }
