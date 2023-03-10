@@ -11,5 +11,16 @@ package datastructure.stackqueuesinterview.animalshelter;
  */
 
 public class AnimalShelter {
+    public static void main(String[] args){
+        AnimalQueue animals = new AnimalQueue();
+        animals.enqueue(new Cat("Kiki"));
+        animals.enqueue(new Cat("Karl"));
+        animals.enqueue(new Dog("Benji"));
+        animals.enqueue(new Cat("Reki"));
+        animals.enqueue(new Cat("Kiki"));
+        animals.enqueue(new Dog("Dexter"));
+
+        System.out.println(animals.dequeueAny().name());
+    }
 
 }
